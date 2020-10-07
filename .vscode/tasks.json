@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build quanta-chess (Debug)",
+            "type": "shell",
+            "command": "bazel build //main:quanta -c dbg --spawn_strategy=standalone",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ]
+}

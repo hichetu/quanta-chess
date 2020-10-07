@@ -1,0 +1,14 @@
+build --cxxopt -std=c++2a
+build --symlink_prefix=.bazel/
+build --color=yes
+
+run --cxxopt -std=c++2a
+run --symlink_prefix=.bazel/
+run --color=yes
+
+run --compilation_mode=dbg
+
+# run --fission=yes
+# run --run_under='valgrind --leak-check=full --show-leak-kinds=all'
+
+run --run_under='valgrind --leak-check=full --show-leak-kinds=definite,possible'
