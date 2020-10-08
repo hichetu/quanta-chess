@@ -4,14 +4,17 @@
 
 using namespace std;
 
+#include "command.hpp"
+#include "defines.hpp"
+
 int main() {
-  vector<string> msg{"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
+  using namespace quanta;
 
-  for (const string& word : msg) {
-    cout << word << " ";
-  }
+  cout << prog_version << endl;
 
-  cout << endl;
+  command cmd;
+
+  cmd.read_command();
 
   return 0;
 }

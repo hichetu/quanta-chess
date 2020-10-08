@@ -11,13 +11,13 @@
             "request": "launch",
             "program": "${workspaceFolder}/bazel-out/darwin-dbg/bin/main/quanta",
             "args": [],
-            "stopAtEntry": true,
+            "stopAtEntry": false,
             "cwd": "${workspaceFolder}/bazel-out/darwin-dbg/bin/main/quanta.runfiles/__main__/main",
             "sourceFileMap": {
                 "/var/tmp/_bazel_navachet/53066362b7d61b13d0fc0cf227839095/execroot/__main__/": "${workspaceFolder}",
             },
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "MIMode": "lldb"
         }
     ]
